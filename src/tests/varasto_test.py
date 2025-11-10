@@ -21,7 +21,6 @@ class TestVarasto(unittest.TestCase):
 
     def test_negatiivinen_tilavuus(self):
         self.varasto = Varasto(-2)
-        
         self.assertAlmostEqual(self.varasto.tilavuus, 0)
 
     def test_lisays_lisaa_saldoa(self):
@@ -57,7 +56,7 @@ class TestVarasto(unittest.TestCase):
 
         self.assertAlmostEqual(saatu_maara, 0)
 
-    def test_ottaminen_otetaan_enemmän(self):
+    def test_ottaminen_otetaan_enemman(self):
         self.varasto.lisaa_varastoon(5)
 
         saatu_maara = self.varasto.ota_varastosta(100)
